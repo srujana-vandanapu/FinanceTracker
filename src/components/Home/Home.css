@@ -1,0 +1,80 @@
+.home{
+    padding: 5.5rem;
+    color: black;
+    padding-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 14rem;
+  } 
+  .para{
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      color:black;
+      font-size: 1.2rem;
+  }
+  .home-head{
+    font-size: 3rem;
+  }
+  button{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .home-left{
+    width: 35rem;
+  }
+  
+  .btn-1{
+    height: 3.22rem;
+    width: 12rem;
+    background: #913ce1;
+    color: white;
+    border: none;
+    border-radius: 1.2rem;
+    font-family: Poppins, "sans-serif";
+    font-size: 0.98rem;
+    cursor: pointer;
+  }
+  .btn-2{
+    height: 3.22rem;
+    width: 12rem;
+    border:3px solid  #913ce1;
+    background: none;
+    color: #913ce1;
+    border-radius: 1.2rem;
+    font-family: Poppins, "sans-serif";
+    font-size: 0.98rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 4rem;
+  }
+  
+  .home-savings{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+  .home-right-img{
+    width: 37rem;
+    height: 25rem;
+    background-image:url("../../assets/home-left.svg");
+    background-position: center;
+    background-size: cover;
+    justify-self: center;
+    background-repeat: no-repeat;
+  }
+  .buttons-div{
+    display: flex;
+  }
+
+  .btn-2:hover,.btn-1:hover{
+    background-color: #4e0064;
+    color: white;
+    transition: 2s;
+    border: #4e0064;
+  }
+  .link{
+    color: #913ce1;
+    text-decoration: none;
+  }
+  .btn-2:hover .link{
+    color: white;
+  }

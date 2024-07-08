@@ -1,0 +1,28 @@
+.historyTable{
+    margin-top: 10px;
+    width: 80%;
+    margin-left: 10%;
+  }
+  
+  .historyHead, .historydata {
+    padding-left: 8px;
+    text-align: left;
+    width: 25%;
+    background-color: rgb(232, 192, 255);
+  } 
+  .historydata{
+    height: 3rem;
+  }
+  .historyHead {
+    padding: 8px;
+    background-color: #8a2be2;
+    color: white;
+  }
+  .history{
+    text-align: center;
+    margin-top: 3.5rem;
+  }
+  .cost{
+    color: green;
+    font-weight: bold;
+  }
