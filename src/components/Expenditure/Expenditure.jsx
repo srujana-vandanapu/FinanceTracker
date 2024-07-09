@@ -3,7 +3,7 @@ import "../Expenditure/Expenditure.css";
 import Navbar from "../Navbar/Navbar";
 import axios from "axios";
 
-const Expenditure = () => {
+const Expenditure = (props) => {
   const [expenditures, setExpenditures] = useState([]);
   const [expenditureText, setExpenditureText] = useState("");
   const [expenditureDate, setExpenditureDate] = useState("");
@@ -99,7 +99,8 @@ const Expenditure = () => {
           <div className="class">
             <h1 className="cat-heading">Expenditure</h1>
           </div>
-          <h3>Total Expenditure is: &#8377; {calculateTotalExpenditure()}</h3>
+          <h3>Total Expenditure : &#8377; {calculateTotalExpenditure()}</h3>
+          <h3>Total savings : &#8377;{props.calculateTotalSavings()}</h3>
           <div className="inc-details">
             <div className="Income-inputs">
               <input

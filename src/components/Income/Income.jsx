@@ -4,7 +4,7 @@ import Navbar from "../Navbar/Navbar";
 import axios from "axios";
 import { useEffect } from "react";
 
-const Income = () => {
+const Income = (props) => {
   const [incomeText, setIncomeText] = useState("");
   const [incomeCost, setIncomeCost] = useState("");
   const [incomeDate, setIncomeDate] = useState("");
@@ -108,8 +108,9 @@ const Income = () => {
           <div className="class">
             <h1 className="cat-heading">Income</h1>
           </div>
-          <h3>Total Income is: &#8377;{calculateTotalIncome()}</h3>
-          <div className="inc-details">
+          <h3>Total Income : &#8377;{calculateTotalIncome()}</h3>
+          <h3>Total savings : &#8377;{props.calculateTotalSavings()}</h3>
+          <div className="inc-details" >
             <div className="Income-inputs">
               <input
                 className="Ex-Txtinput"
