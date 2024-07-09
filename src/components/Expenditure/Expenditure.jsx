@@ -12,7 +12,7 @@ const Expenditure = (props) => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/expenditure/getexpenditures")
+      .get("https://financetracker-backend-rut1.onrender.com/expenditure/getexpenditures")
       .then((res) => {
         setExpenditures(res.data);
       })
@@ -28,7 +28,7 @@ const Expenditure = (props) => {
       ExpenditureCost: expenditureCost,
       ExpenditureCategory: expenditureCategory,
     };
-    const url = "http://localhost:4000/expenditure/addexpenditure";
+    const url = "https://financetracker-backend-rut1.onrender.com/expenditure/addexpenditure";
 
     axios
       .post(url, inpObj)
@@ -49,7 +49,7 @@ const Expenditure = (props) => {
 
   const handleDeleteExpenditure = (id) => {
     axios
-      .delete("http://localhost:4000/expenditure/deleteexpenditure/" + id)
+      .delete("https://financetracker-backend-rut1.onrender.com/expenditure/deleteexpenditure/" + id)
       .then((res) => {
         console.log(res.data);
         if (res.status === 200) {

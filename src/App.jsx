@@ -15,7 +15,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/income/getincome")
+      .get("https://financetracker-backend-rut1.onrender.com/income/getincome")
       .then((res) => {
         setIncomes(res.data);
       })
@@ -26,7 +26,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/expenditure/getexpenditures")
+      .get("https://financetracker-backend-rut1.onrender.com/expenditure/getexpenditures")
       .then((res) => {
         setExpenditures(res.data);
       })

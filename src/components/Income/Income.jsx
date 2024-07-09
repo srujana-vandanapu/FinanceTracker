@@ -12,7 +12,7 @@ const Income = (props) => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/income/getincome")
+      .get("https://financetracker-backend-rut1.onrender.com/income/getincome")
       .then((res) => {
         console.log(res.data);
         setIncomes(res.data);
@@ -24,7 +24,7 @@ const Income = (props) => {
 
   const handleAddIncome = () => {
     let inpObj = { incomeText, incomeCost, incomeDate };
-    const Url = "http://localhost:4000/income/addincome";
+    const Url = "https://financetracker-backend-rut1.onrender.com/income/addincome";
     axios
       .post(Url, inpObj)
       .then((res) => {
@@ -57,7 +57,7 @@ const Income = (props) => {
   };
   const handleDeleteIncome = (id) => {
     axios
-      .delete("http://localhost:4000/income/deleteincome/" + id)
+      .delete("https://financetracker-backend-rut1.onrender.com/income/deleteincome/" + id)
       .then((res) => {
         console.log(res.data);
         if (res.status === 200) {

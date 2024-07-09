@@ -11,7 +11,7 @@ export default function History() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/income/getincome")
+      .get("https://financetracker-backend-rut1.onrender.com/income/getincome")
       .then((res) => {
         console.log(res.data);
         setIncomes(res.data);
@@ -23,7 +23,7 @@ export default function History() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/expenditure/getexpenditures")
+      .get("https://financetracker-backend-rut1.onrender.com/expenditure/getexpenditures")
       .then((res) => {
         console.log(res.data);
         setExpenditures(res.data);
