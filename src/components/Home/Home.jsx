@@ -9,14 +9,13 @@ export default function Home(props) {
         <div className="home-left">
           <div className="home-head">
             Hello,
-            <span style={{ color: "#913ce1" }}> User</span>
+            <span style={{ color: "#913ce1" }}> User &#128075;</span>
           </div>
           <p className="para">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat
-            exercitationem delectus illum hic eaque facere corporis laborum
-            quaerat blanditiis, nesciunt nostrum, dolor voluptates molestiae
-            voluptatum fugit a, iste nam assumenda? Lorem ipsum dolor sit amet
-            consectetur adipisicing elit.
+            Welcome to Your Personal Finance Tracker ! <br />
+            Track, Manage, Save Stay on
+            top of your finances with ease. Monitor your spending, set budgets,
+            and achieve your savings goals. <br /> <br /> Get Started Today!
           </p>
           <div className="buttons-div">
             <button className="btn-1">
@@ -32,13 +31,16 @@ export default function Home(props) {
           </div>
           <div className="details-box">
             <div className="home-savings">
-              Total Savings  <strong>&#8377;{props.calculateTotalSavings()}{" "}</strong>
+              Total Savings{" "}
+              <strong>&#8377;{props.calculateTotalSavings()} </strong>
             </div>
             <div className="home-savings">
-              Total Income  <strong>&#8377;{props.calculateTotalIncome()}{" "}</strong>
+              Total Income{" "}
+              <strong>&#8377;{props.calculateTotalIncome()} </strong>
             </div>
             <div className="home-savings">
-              Total Expenditure  <strong>&#8377;{props.calculateTotalExpenditure()}{" "}</strong>
+              Total Expenditure{" "}
+              <strong>&#8377;{props.calculateTotalExpenditure()} </strong>
             </div>
           </div>{" "}
         </div>

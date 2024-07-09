@@ -118,9 +118,7 @@ axios.get("http://localhost:4000/user/getusers")
         <div className="profile-main">
           <div className="profile-left">
             <div className="profile-head">Your Profile</div>
-              {display(users)}
-            <button class="profile-btn-1">UPDATE</button>
-            <button class="profile-btn-2">SAVE</button>
+              {display(users)} <br />
           </div>
           <div className="profile-right"></div>
         </div>
